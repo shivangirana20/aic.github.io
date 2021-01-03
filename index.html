@@ -1,0 +1,1082 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIC-MFIE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/jquery.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/popper.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/bootstrap.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/mdb.min.js"></script><script src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.0/compiled-addons.min.js"></script><script></script><div class="hiddendiv common"></div></body></html>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <style>
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+
+        #heroimg{
+            height: 35rem;
+        }
+
+        .footers a {color:#696969;}
+.footers p {color:#696969;}
+.footers ul {line-height:30px;}
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
+        html,body{
+                margin: 0 ;
+                padding: 0;
+                font-family: Rubik;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link 
+        {
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+        .product .img-responsive{
+            margin: 0 auto;
+        }
+        #heroimg{
+            margin-top: 2.5em;
+            height: 25rem;
+        }
+        #main_btn{
+            background-color:#FF725E;
+            color:white;
+            padding: 0.7%;
+            width: 8rem;
+            height: 5%;
+            font-size: 1.2rem;
+            margin-top: 2%;
+            font-weight: bold;
+            border-color: #FF725E;
+            text-align: center;
+        }
+        #job{
+            background-color:#FF725E;
+            color:white;
+            font-weight: bold;
+            border-color: #FF725E;
+        }
+        #main_btn1{
+            background-color: white;
+            padding: 0.7%;
+            width: 15rem;
+            height: 5%;
+            font-size: 1.2rem;
+            margin-top: 2%;
+            font-weight: normal;
+            color: #277D8C;        
+        }                   
+        .nav-item{
+            padding: 0.2%;
+            width: 9.2rem;
+            height: 4%;
+            margin-top: 2%;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .nav-item1{
+            width: 9.2rem;
+            height: 4%;
+            margin-top: 2%;         
+            background-color: white;
+            font-size: 1.2rem;  
+            text-align: center;       
+        }      
+        .navbar-brand{
+            font-weight: bold;
+            font-size: 2rem;
+            margin-left: 1em;
+        }      
+        html,body{
+            max-width: 100%;
+            font-family: rubik;
+            overflow-x:hidden;
+        }    
+        h4{
+            margin-bottom: 1.2em;
+            text-align: center;
+        }
+        .navbar navbar-light{
+            width: 100%;
+            height: 23em;
+        } 
+        .navbar{
+            width: 100%;
+        }
+        .row1{
+            background-color: #277D8C;
+            width: 100%;
+            height:15em;
+            text-align: center;
+            color: white;
+            padding:1rem;
+        }   
+        #vision{   
+            text-align: center;
+            font-size: 2em;                
+        }
+        #pana12{
+            align-items: center;
+        }    
+        a{
+            color: #FF725E;
+        }   
+        h1,h2{
+            text-align: center; 
+            margin-top: 6% ; 
+            color:#277D8C; 
+            font-weight: bolder;
+        }   
+        .carousel{
+            background: #2f4357;
+            margin-top: 4%;
+        }
+        .carousel-item{
+            text-align: center;
+            min-height: 6%; /* Prevent carousel from being distorted if for some reason image doesn't load */
+        }
+        .carousel-item {
+            height: 60%;
+        }
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #277D8C;
+        }
+        .carousel-indicators {
+            bottom: -50px;
+        }
+        .round{
+            border-radius: 50% ;
+        }
+
+        @media (max-width: 575.98px) { 
+            .display3{
+            display: none;
+          }  
+          .display4{
+            display: block;
+            
+          }
+        }    
+        @media (min-width: 768px) { 
+          .display4{
+            display: none;
+           
+          }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #277D8C ;">
+            <a class="navbar-brand" href="index.html">
+                AIC-MFIE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="text-align: center;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="d_2.html" id="home" style="text-align: center;">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="d_4.html" style="text-align: center;" >Our Startups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="d_5.html" style="text-align: center;">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#c1">Contact</a>
+                    </li>
+                    
+                    <button id="main_btn" type="button" class="btn btn-danger btn-sm">
+                        <a href="d_3.html" style="color: white; text-decoration: none;">Apply</button>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <img id="home" src="img/home.png" style="width:100%;display: flex;align-items: center;">
+    </div>
+    <div>
+        <h2>Latest events</h2>
+    </div>  
+    <div class="container" style="margin-top: 6%;">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <figure>
+                        <img class="img-thumbnail" class="ïmg-responsive" src="img/grey.png" alt="image">
+                        <figcaption>
+                            Lorem ipsum
+                        </figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et fuga...
+                        </p>
+                        <a href="#read">Read more >></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <figure>
+                        <img class="img-thumbnail" class="ïmg-responsive" src="img/grey.png" alt="image">
+                        <figcaption>
+                            Lorem ipsum
+                        </figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et fuga...
+                        </p>
+                        <a href="#read">Read more >></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <figure>
+                        <img class="img-thumbnail" class="ïmg-responsive" src="img/grey.png" alt="image">
+                        <figcaption>
+                            Lorem ipsum
+                        </figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et fuga...
+                        </p>
+                        <a href="#read">Read more >></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;margin-bottom: 6%; font-weight: bolder;">
+        <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="color: black; border-color:#FF725E">Know More
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+    </div>
+    <div class="row" style="margin-top: 4%; margin-bottom: 4%;">
+        <div class="col-md-6 col-sm-12">
+            <img style="display:block;margin:auto;" id="art1" src="img/Artboard 1@4x 1.png">
+        </div>
+        <div class="col-md-6 col-sm-12" style="padding: 6%;color:white;background-color: #277D8C;">
+            <h2 style="font-weight:bold; padding-left: 6%;padding-right: 6%;">Who are we?</h2>
+            <p style="text-align: left;padding-right: 6%;padding-left:6%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse neque ex soluta quis incidunt est minus repellat quibusdam labore expedita culpa voluptatem doloremque corrupti quod, voluptatum odio, et cumque nesciunt! Esse neque ex soluta quis incidunt est minus repellat quibusdam labore expedita culpa voluptatem doloremque corrupti quod, voluptatum odio, et cumque nesciunt!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 6%;margin-bottom: 6%;">
+            <div class="col-md-6 col-sm-12">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et fuga...
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-6 col-sm-12" style="display: flex;justify-content: center;align-items: center;align-content: center;">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et fuga...
+                    </p>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey2.png" alt="image">
+                    <p style="padding-right: 22%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="container">
+                    <div class="row" style="display:flex;">
+                        <div style="display: inline; margin-right: 2%;">
+                            <img class="img-thumbnail" src="img/grey3.png" style="display:inline; float:left ; margin: 2%;" alt="image">
+                            <p style="display: inline;">
+                                amet consectetur adipisicing elit.amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="display:flex;">
+                        <div style="display: inline; margin-right: 2%;">
+                            <img class="img-thumbnail" src="img/grey3.png" style="display:inline; float:left ; margin: 2%;" alt="image">
+                            <p style="display: inline;">
+                                amet consectetur adipisicing elit.amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="display:flex;">
+                        <div style="display: inline; margin-right: 2%;">
+                            <img class="img-thumbnail" src="img/grey.png" style="display:inline; float:left ; margin: 2%;" alt="image">
+                            <p style="display: inline; height: inherit; justify-content: center;">
+                                amet consectetur adipisicing elit.amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> 
+        <h2>Our Experts</h2>
+    </div>
+    <!--Carousel Wrapper-->
+    <div class="display3">
+    <div style=" background-color: white; justify-content:space-evenly; display: flex;">
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" style="padding-right:5%; height: 100%; background-color: white">
+        
+            <!--Controls-->
+            <div class="carousel-control-prev w-auto">
+              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img src="img/left.png"></a>
+            </div>
+            <div class="carousel-control-next w-auto">   
+              <a class="btn-floating" href="#multi-item-example" data-slide="next"><img src="img/right.png"></a>
+            </div>
+            <!--/.Controls-->
+            <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      
+    </ol>
+    <!--/.Indicators-->
+            <!--Slides-->
+            
+            <div class="container" style="margin-left: 4%; margin-right: 6%; height: 100%; background-color: white">
+              <div class="carousel-inner" role="listbox" style=" height: 100%; background-color: white; text-align: center;">
+          
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                   <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                      <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                      <div class="card mb-2" style="border:5px solid transparent;">
+                        <img class="card-img-top  rounded-circle"
+                          src="img/grey.png" alt="Card image cap">
+                          <figcaption style="text-align:center;">
+                              lorem ipsum<br> lorem ipsum lorem ipsum
+                          </figcaption>
+                      </div>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                   <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                      <div class="card mb-2" style="border:5px solid transparent;">
+                        <img class="card-img-top rounded-circle"
+                          src="img/grey.png" alt="Card image cap">
+                          <figcaption style="text-align:center;">
+                              lorem ipsum<br> lorem ipsum lorem ipsum
+                          </figcaption>
+                      </div>
+                    </div>
+              </div>  
+            
+              </div>
+                <!--/.First slide-->
+            
+                <!--Second slide-->
+                <div class="carousel-item">
+                  <div class="row">
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                   <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top  rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle""
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top  rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                      <div class="card mb-2" style="border:5px solid transparent;">
+                        <img class="card-img-top rounded-circle"
+                          src="img/grey.png" alt="Card image cap">
+                          <figcaption style="text-align:center;">
+                              lorem ipsum<br> lorem ipsum lorem ipsum
+                          </figcaption>
+                      </div>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                   <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                          lorem ipsum<br> lorem ipsum lorem ipsum
+                      </figcaption>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6" style="float:left">
+                      <div class="card mb-2" style="border:5px solid transparent;">
+                        <img class="card-img-top rounded-circle "
+                          src="img/grey.png" alt="Card image cap">
+                          <figcaption style="text-align:center;">
+                              lorem ipsum<br> lorem ipsum lorem ipsum
+                          </figcaption>
+                      </div>
+                    </div>
+              </div>  
+            
+              </div>
+                <!--/.Second slide-->
+            
+              </div>
+            </div>
+           
+            <!--/.Slides-->
+          
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+</div>
+        <!-- xs -->
+
+        <div class="display4">
+          <div style=" background-color: white; justify-content:space-evenly; display: flex;">
+            <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel" style="padding-right:5%; height: 100%; background-color: white">
+            
+           <!--Controls-->
+           <div class="carousel-control-prev w-auto">
+            <a class="btn-floating" href="#multi-item-example2" data-slide="prev"><img src="img/left.png"></a>
+          </div>
+          <div class="carousel-control-next w-auto">   
+            <a class="btn-floating" href="#multi-item-example2" data-slide="next"><img src="img/right.png"></a>
+          </div>
+          <!--/.Controls-->
+          <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example2" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example2" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+          <!--Slides-->
+          
+          <div class="container" style="margin-left: 4%; margin-right: 6%; height: 100%; background-color: white">
+            <div class="carousel-inner" role="listbox" style=" height: 100%; background-color: white; text-align: center;">
+        
+              <!--First slide-->
+              <div class="carousel-item active">
+                <div class="row">
+                <div class="col-6" style="float:left">
+                 <div class="card mb-2" style="border:5px solid transparent;">
+                    <img class="card-img-top rounded-circle"
+                      src="img/grey.png" alt="Card image cap">
+                    <figcaption style="text-align:center;">
+                        lorem ipsum<br> lorem ipsum lorem ipsum
+                    </figcaption>
+                  </div>
+                </div>
+          
+                
+                <div class="col-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top  rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                            lorem ipsum<br> lorem ipsum lorem ipsum
+                        </figcaption>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="float:left">
+                 <div class="card mb-2" style="border:5px solid transparent;">
+                    <img class="card-img-top rounded-circle"
+                      src="img/grey.png" alt="Card image cap">
+                      <figcaption style="text-align:center;">
+                        lorem ipsum<br> lorem ipsum lorem ipsum
+                    </figcaption>
+                  </div>
+                </div>
+          
+                
+                <div class="col-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                            lorem ipsum<br> lorem ipsum lorem ipsum
+                        </figcaption>
+                    </div>
+                  </div>
+            </div>  
+          
+            </div>
+              <!--/.First slide-->
+          
+              <!--Second slide-->
+              <div class="carousel-item">
+                <div class="row">
+                <div class="col-6" style="float:left">
+                 <div class="card mb-2" style="border:5px solid transparent;">
+                    <img class="card-img-top  rounded-circle"
+                      src="img/grey.png" alt="Card image cap">
+                      <figcaption style="text-align:center;">
+                        lorem ipsum<br> lorem ipsum lorem ipsum
+                    </figcaption>
+                  </div>
+                </div>
+          
+          
+               
+                <div class="col-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle"
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                            lorem ipsum<br> lorem ipsum lorem ipsum
+                        </figcaption>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="float:left">
+                 <div class="card mb-2" style="border:5px solid transparent;">
+                    <img class="card-img-top rounded-circle"
+                      src="img/grey.png" alt="Card image cap">
+                      <figcaption style="text-align:center;">
+                        lorem ipsum<br> lorem ipsum lorem ipsum
+                    </figcaption>
+                  </div>
+                </div>
+          
+                
+                <div class=" col-6" style="float:left">
+                    <div class="card mb-2" style="border:5px solid transparent;">
+                      <img class="card-img-top rounded-circle "
+                        src="img/grey.png" alt="Card image cap">
+                        <figcaption style="text-align:center;">
+                            lorem ipsum<br> lorem ipsum lorem ipsum
+                        </figcaption>
+                    </div>
+                  </div>
+            </div>  
+          
+            </div>
+              <!--/.Second slide-->
+          
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- xs -->
+
+    <div> 
+        <h2>Our committies</h2>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 6%;margin-bottom: 6%;">
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6" style="display: flex;justify-content: center;align-items: center;align-content: center;">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div> 
+        <h2>Startups</h2>
+    </div>
+        <div class="row" style="margin: 6%;">
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6" style="display: flex;justify-content: center;align-items: center;align-content: center;">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+        </div>
+        <div class="row" style="margin: 6%;">
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6" style="display: flex;justify-content: center;align-items: center;align-content: center;">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <figure>
+                    <img class="img-thumbnail" src="img/grey.png" alt="image">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </figure>
+            </div>
+        </div>
+        <div style="text-align: center; margin-bottom: 5% ; font-weight: bolder;">
+            <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="color: black; border-color:#FF725E">Know More
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </div> 
+        <div> 
+            <h2>Our Industry Partners</h2>
+        </div>
+
+        <!--Carousel Wrapper-->
+        <div style="background-color: white; justify-content:space-evenly; display: flex;">
+        <div id="multi-item-example1" class="carousel slide carousel-multi-item" data-ride="carousel" style="padding-right: 5%; height: 100%; background-color: white">
+
+    <!--Controls-->
+    <div class="carousel-control-prev w-auto">
+      <a class="btn-floating" href="#multi-item-example1" data-slide="prev"><img src="img/left.png"></a>
+    </div>
+    <div class="carousel-control-next w-auto">   
+      <a class="btn-floating" href="#multi-item-example1" data-slide="next"><img src="img/right.png"></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example1" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example1" data-slide-to="1"></li>
+      <li data-target="#multi-item-example1" data-slide-to="2"></li>
+      <li data-target="#multi-item-example1" data-slide-to="3"></li>
+    </ol>
+    <!--/.Indicators-->
+  
+    <!--Slides-->
+  <div class="container" style="margin-left: 4%; margin-right: 6%; height: 100%; background-color: white">
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+         <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+    </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+      </div>
+      <!--/.Second slide-->
+  
+      <div class="carousel-item">
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="carousel-item">
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="img/grey.png" alt="Card image cap">
+            
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+     
+    
+   
+    <!--/.Slides-->
+  
+  </div>
+  <!--/.Carousel Wrapper-->
+</div>
+        <div style="display:flex;align-items: center;justify-content: center; margin: auto; margin-bottom: 6%;">
+            <img id="panad4" src="img/panad4.png" class="img-responsive" width="50% " style="display: flex;align-items: center;">
+        </div>
+  
+        <div>
+            <div class="container">
+                <div class="row" style="margin-top: 9%; margin-bottom: 9%;">
+                    <div class="col-md-3 col-sm-6">
+                      <h5>
+                        <b>Looking for Co-founders?</b>
+                      </h5>
+                      <br>
+                      <a href="#read">Read more >></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <h5>
+                        <b>Looking for idea?</b>
+                      </h5>
+                      <br>
+                      <a href="#read">Read more >></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <h5>
+                        <b>Looking for team?</b>
+                      </h5>
+                      <br>
+                      <a href="#read">Read more >></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <h5>
+                        <b>Other professional services</b>
+                      </h5>
+                      <a href="#read">Read more >></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div>
+          <div class="container">
+            <div class="row" style="margin-top: 9%; margin-bottom: 9%;">
+              <div class="col-md-6 col-sm-12" style="text-align: center;">
+                <h5 style="padding:2%;padding-right: 4%; padding-left: 4%;">
+                  <b>Want to work with one of our startups?</b>
+                </h5>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <p>
+                  <button id="job" style="padding: 2%;padding-left: 4%; padding-right: 4%;"type="button" class="btn btn-danger btn-lg">&nbsp;&nbsp;Search for job opening&nbsp;&nbsp;</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="footers bg-light pt-5 pb-3" style="background-color: #BBDDE3;">
+            <div style="background-color: #BBDDE3; padding: 6%;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                     <div>
+                         <img src="img/Artboard 1@4x 24_2.png" alt="Logo" style="width:100%;">
+                     </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col md-6 col-lg-6">
+                     <div class="footers-info mt-3">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis atque doloremque sint odit? Voluptas est repellat asperiores dolorem cumque consequatur modi quas, molestias suscipit commodi tempora quaerat quis maiores architecto?
+                     </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <div style="text-align: center;font-size: 0.8rem;">
+                            <h5 id="c1">Contact Details</h5>
+                            <p style="color:black"><b>Email</b>
+                            <br>examplemail@gmail.com
+                            </p>
+                            <p style="color:black"><b>Contact Number</b>
+                                <br>
+                            +91 123456789
+                            <br>
+                            <br>
+                            <a href="#"><img src="img/facebook.png"></a>
+                            <a href="#"><img src="img/twitter.png"></a>
+                            <a href="#"><img src="img/linkedin.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <div style="text-align: center;">
+                            <h5>
+                                Useful links
+                            </h5>
+                            <p style="color: black;">
+                                Login
+                                <br>
+                                Events
+                                <br>
+                                Careers
+                                <br>
+                                Programs
+                                <br>
+                                Help Center
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 6%;padding-top: 0%; padding-left:8%; background-color:#BBDDE3;">
+                <div class="row" style="background-color: #BBDDE3;">
+                    <div class="col-md-9 col-sm-12 ">
+                     <h3>FAQ</h3>
+                        <small>
+                           Disclaimer: Element Ltd is only an intermediary offering its platform to facilitate the transactions between Seller and Customer/Buyer/User and is not and cannot be a party to or control in any manner any transactions between the Seller and the Customer/Buyer/User. All the offers and discounts on this Website have been extended by various Builder(s)/Developer(s) who have advertised their products. Element is only communicating the offers and not selling or rendering any of those products or services. It neither warrants nor is it making any representations with respect to offer(s) made on the site. Element Limited shall neither be responsible nor liable to mediate or resolve any disputes or disagreements between the Customer/Buyer/User and the Seller and both Seller and Customer/Buyer/User shall settle all such disputes without involving Element Limited in any manner.
+                       </small>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+</body>
+</html>
+
+    
+   
+

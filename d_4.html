@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIC-MFIE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/jquery.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/popper.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/bootstrap.min.js"></script><script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/js/mdb.min.js"></script><script src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.0/compiled-addons.min.js"></script><script></script><div class="hiddendiv common"></div></body></html>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        html,body{
+                margin: 0 ;
+                padding: 0;
+                font-family: Rubik;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link 
+        {
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+        h2{
+          font-weight: bolder;
+        }
+        .product .img-responsive{
+            margin: 0 auto;
+        }
+        #heroimg{
+            margin-top: 2.5em;
+            height: 25rem;
+        }
+        #main_btn{
+            background-color:#FF725E;
+            color:white;
+            padding: 0.7%;
+            width: 8rem;
+            height: 5%;
+            font-size: 1.2rem;
+            margin-top: 2%;
+            font-weight: bold;
+            text-align: center;
+            border-color: #FF725E;
+        }
+        #job{
+            background-color:#FF725E;
+            color:white;
+            font-weight: bold;
+            border-color: #FF725E;
+        }
+        #main_btn1{
+            background-color: white;
+            padding: 0.7%;
+            width: 15rem;
+            height: 5%;
+            font-size: 1.2rem;
+            margin-top: 2%;
+            font-weight: normal;
+            color: #277D8C; 
+            border-color: white;  
+            text-align: center;     
+        }                   
+        .nav-item{
+            padding: 0.2%;
+            width: 9.2rem;
+            height: 4%;
+            margin-top: 2%;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .nav-item1{
+            width: 9.2rem;
+            height: 4%;
+            margin-top: 2%;         
+            background-color: white;
+            font-size: 1.2rem;         
+        }      
+        .navbar-brand{
+            font-weight:bold;
+            font-size: 2rem;
+            margin-left: 1em;
+        }      
+        html,body{
+            max-width: 100%;
+            font-family: rubik;
+            overflow-x:hidden;
+        }    
+        h4{
+            margin-bottom: 1.2em;
+            text-align: center;
+        }
+        .navbar navbar-light{
+            width: 100%;
+            height: 23em;
+        } 
+        .navbar{
+            width: 100%;
+        }
+        .row1{
+            background-color: #277D8C;
+            width: 100%;
+            height:15em;
+            text-align: center;
+            color: white;
+            padding:1rem;
+        }   
+        #vision{   
+            text-align: center;
+            font-size: 2em;                
+        }
+        #pana12{
+            align-items: center;
+        }    
+        a{
+            color: #FF725E;
+        }
+        
+          @media (max-width: 575.98px) { 
+            .display1{
+            display: none;
+          }  
+          .display2{
+            display: block;
+            overflow: auto;
+            white-space: nowrap;
+          }
+        }    
+        @media (min-width: 768px) { 
+          .display2{
+            display: none;
+           
+          }
+         }
+
+         #r1{
+                color: #FF725E;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #277D8C ;">
+            <a class="navbar-brand" href="index.html">
+                AIC-MFIE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                     <a class="nav-link" href="d_2.html" id="home" style="text-align: center;">About </a>
+                 </li>
+                <li class="nav-item1 active">
+                    <a class="nav-link" href="#d_4.html" style="text-align: center;color: #277D8C;" >Our Startups</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="d_5.html" style="text-align: center;">Invest</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#c1">Contact</a>
+                </li>
+                <button id="main_btn" type="button" class="btn btn-danger btn-sm">
+                    <a href="d_3.html"></a>
+                    Apply</button>
+    
+            </ul>
+        </div>
+     </nav>
+    
+     <div class="row" style="margin-top:8%" >
+      <div class="col-md-6 col-sm-12 order-2 order-sm-1" style="margin-top: 10%;">
+                 <h2 style="font-weight: bold; text-align: left;">Our Startups</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur. Eu mauris, viverra in pellentesque viverra justo hendrerit fermentum. Odio viverra malesuada sed ullamcorper vitae est. Ultricies laoreet elit ut urna purus non. A, elementum elementum tempus, sem.
+                     Eu mauris, viverra in pellentesque viverra justo hendrerit fermentum. Odio viverra malesuada sed ullamcorper vitae est. Ultricies laoreet elit ut urna purus non. A, elementum elementum tempus, sem.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 order-1 order-sm-2">
+                <img id="heroimg" src="img/pana4.png" class = "img-responsive" width = "100%">
+                
+             </div>
+       </div>  
+       <div class="display1">
+       <h2 style="font-weight: bold; text-align: left; margin-top: 5%;">Categories</h2>
+       
+<div>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:3%;border-color: #277D8C; width:8em;">All</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color : white; width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:3%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+         <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+ </div>
+ </div>
+ <div class="display2" style="padding: 14px;">
+   
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left: 3%;border-color: #277D8C; width:8em;">All</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color : white; width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:3%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+    <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="margin-left:1%;border-color: #277D8C;background-color: #277D8C;color: white;width: 8em">Category name</button>
+<!-- </div> -->
+ </div>
+    </div>   
+
+    <div class="container">
+   <div class="row" style="margin-top:8%" >
+    <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+       <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+        <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+     <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+        <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+      </a>
+    </div>    
+    <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur. </p>
+        <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+            <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+          </a>
+    </div>    
+    <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur. </p>
+      <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+        <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+      </a>
+    </div>    
+  </div>
+    <div class="row" style="margin-top:3%" >
+      <div class="col-md-3 col-sm-6">
+        <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+        <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+         <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+       </a>
+    </div>
+       <div class="col-md-3 col-sm-6">
+        <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+        <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+         <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+       </a>
+       </div>    
+      <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+        <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+         <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+       </a>
+      </div>    
+     <div class="col-md-3 col-sm-6">
+      <img id="" src="img/grey.png" class = "img-responsive" width = "90%">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+        <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+         <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+       </a>
+    </div> 
+ </div> 
+ <div style="text-align: center; margin-top: 8%;margin-bottom: 5% ; color:#277D8C; font-weight: bolder;">
+    <h2>Our Achievements</h2>
+  </div>
+<div class="container"></div>
+   <div class="row" style="margin-top:4%" >
+         <div class="col-md-3 col-sm-6">
+                <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+         </div>
+     <div class="col-md-3 col-sm-6">
+            <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+       </div>    
+     <div class="col-md-3 col-sm-6">
+        <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+     </div> 
+      <div class="col-md-3 col-sm-6">
+         <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+     </div> 
+   </div>
+</div>   
+<div style="text-align: center; margin-top: 8%;margin-bottom: 5% ; color:#277D8C; font-weight: bolder;">
+    <h2>Upcoming events</h2>
+  </div>  
+  <div class="container">
+     <div class="row" style="margin-top:4%" >
+         <div class="col-md-4 col-sm-6">
+                <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+                <figcaption style="margin-top: 2%;">Lorem ipsum</figcaption>
+                  <br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+                <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+                    <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+                 </a>
+        </div> 
+        <div class="col-md-4 col-sm-6">
+            <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+            <figcaption style="margin-top: 2%;">Lorem ipsum</figcaption>
+              <br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+            <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+                <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+             </a>
+        </div> 
+       <div class="col-md-4 col-sm-6">
+            <img id="" src="img/grey.png" class = "img-responsive" width = "100%">
+            <figcaption style="margin-top: 2%;">Lorem ipsum</figcaption>
+                 <br>
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing risus lectus ultrices felis. Quam quam bibendum ac sagittis consectetur.</p>
+             <a href="#" style="color:#FF725E;font-weight: bold; margin-bottom:2% ;">Read more 
+                <i class="fas fa-angle-double-right" style="color:#FF725E; padding-top: 2%;"></i>
+             </a>
+        </div> 
+     </div>
+  </div>
+     <div style="text-align: center; margin-top: 8%;margin-bottom: 5% ; font-weight: bolder;">
+        <button id="main_btn1" type="button" class="btn btn-danger btn-sm btn-default" style="color: black; border-color:#FF725E"><a href="d_6.html" style="color: black;text-decoration: none;"> Know More</a>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+      </div>   
+      <div style="display:flex;align-items: center;justify-content: center; margin: auto; margin-bottom: 6%;">
+          <img id="panad4" src="img/panad4.png" class="img-responsive" width="50% " style="display: flex;align-items: center;">
+      </div>
+
+      <div>
+          <div class="container">
+              <div class="row" style="margin-top: 9%; margin-bottom: 9%;">
+                  <div class="col-md-3 col-sm-6">
+                    <h5>
+                      <b>Looking for Co-founders?</b>
+                    </h5>
+                    <br>
+                    <a href="#read" id="r1">Read more >></a>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h5>
+                        
+                      <b>Looking for idea?</b>
+                    </h5>
+                    <br>
+                    <a href="#read" id="r1">Read more >></a>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h5>
+                      <b>Looking for team?</b>
+                    </h5>
+                    <br>
+                    <a href="#read" id="r1">Read more >></a>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h5>
+                      <b>Other professional services</b>
+                    </h5>
+                    <br>
+                    <a href="#read" id="r1">Read more >></a>
+                  </div>
+              </div>
+          </div>
+      </div> 
+      <div>
+        <div class="container">
+          <div class="row" style="margin-top: 9%; margin-bottom: 9%;">
+            <div class="col-md-6 col-sm-12" style="text-align: center;">
+              <h5 style="padding:2%;padding-right: 4%; padding-left: 4%;">
+                <b>Want to work with one of our startups?</b>
+              </h5>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <button id="job" style="padding: 2%;padding-left: 4%; padding-right: 4%;"type="button" class="btn btn-danger btn-lg">&nbsp;&nbsp;Search for job opening&nbsp;&nbsp;</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="footers bg-light pt-5 pb-3" style="background-color: #BBDDE3;">
+            <div style="background-color: #BBDDE3; padding: 6%;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                     <div>
+                         <img src="img/Artboard 1@4x 24_2.png" alt="Logo" style="width:100%;">
+                     </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col md-6 col-lg-6">
+                     <div class="footers-info mt-3">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis atque doloremque sint odit? Voluptas est repellat asperiores dolorem cumque consequatur modi quas, molestias suscipit commodi tempora quaerat quis maiores architecto?
+                     </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <div style="text-align: center;font-size: 0.8rem;">
+                            <h5 id="c1">Contact Details</h5>
+                            <p style="color:black"><b>Email</b>
+                            <br>
+                            examplemail@gmail.com
+                            </p>
+                            <p style="color:black"><b>Contact Number</b>
+                                <br>
+                            +91 123456789
+                            <br>
+                            <br>
+                            <a href="#"><img src="img/facebook.png"></a>
+                            <a href="#"><img src="img/twitter.png"></a>
+                            <a href="#"><img src="img/linkedin.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <div style="text-align: center;">
+                            <h5>
+                                Useful links
+                            </h5>
+                            <p style="color: black;">
+                                Login
+                                <br>
+                                Events
+                                <br>
+                                Careers
+                                <br>
+                                Programs
+                                <br>
+                                Help Center
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 6%;padding-top: 0%; padding-left:8%; background-color:#BBDDE3;">
+                <div class="row" style="background-color: #BBDDE3;">
+                    <div class="col-md-9 col-sm-12 ">
+                     <h3>FAQ</h3>
+                        <small>
+                           Disclaimer: Element Limited is only an intermediary offering its platform to facilitate the transactions between Seller and Customer/Buyer/User and is not and cannot be a party to or control in any manner any transactions between the Seller and the Customer/Buyer/User. All the offers and discounts on this Website have been extended by various Builder(s)/Developer(s) who have advertised their products. Element is only communicating the offers and not selling or rendering any of those products or services. It neither warrants nor is it making any representations with respect to offer(s) made on the site. Element Limited shall neither be responsible nor liable to mediate or resolve any disputes or disagreements between the Customer/Buyer/User and the Seller and both Seller and Customer/Buyer/User shall settle all such disputes without involving Element Limited in any manner.
+                       </small>
+                    </div>
+                </div>
+            </div>
+         </section>
+</body>
+</html>
+
+  
+
+   
